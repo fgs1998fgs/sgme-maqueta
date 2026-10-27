@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avisos del sistema · SGME</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <span class="marca">SGME · Minimarket Express</span>
+    <button class="menu-boton" aria-expanded="false" aria-controls="menu-principal">☰ Menú</button>
+    <span class="usuario">Cajero · D. González</span>
+  </header>
+  <nav aria-label="Principal">
+      <ul>
+        <li><a href="index.html" aria-current="page">Vender</a></li>
+        <li><a href="inventario.html">Inventario</a></li>
+        <li><a href="ventas.html">Ventas</a></li>
+        <li><a href="usuarios.html">Usuarios</a></li>
+      </ul>
+  </nav>
+  <main>
+    <h1>Avisos del sistema</h1>
+
+    <div class="aviso error">
+      <h2>No se pudo guardar la venta</h2>
+      <p>La base de datos no respondió (error 500). Vuelva a intentarlo; si
+      persiste, avise al administrador.</p>
+    </div>
+    <form>
+      <div class="campo error">
+        <label for="cantidad">Cantidad</label>
+        <input id="cantidad" name="cantidad" type="number" value="0"
+               aria-describedby="ayuda-cantidad">
+        <p class="nota" id="ayuda-cantidad">La cantidad debe ser mayor que cero.</p>
+      </div>
+    </form>
+    <div class="aviso atencion">
+      <h2>Quedan 3 unidades de Leche Alquería 1 L</h2>
+      <p>Está por debajo del stock mínimo. Puede vender igual.</p>
+    </div>
+    <div class="acciones">
+      <a class="boton" href="index.html">Reintentar</a>
+      <a class="boton secundario" href="index.html">Cancelar</a>
+    </div>
+
+  </main>
+  <footer>
+    <p>SGME · Sistema de Gestión Minimarket Express · Daniel Felipe González
+    Sabogal · Ficha 3389057</p>
+  </footer>
+  <script src="menu.js"></script>
+</body>
+</html>

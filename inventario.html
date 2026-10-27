@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inventario · SGME</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <span class="marca">SGME · Minimarket Express</span>
+    <button class="menu-boton" aria-expanded="false" aria-controls="menu-principal">☰ Menú</button>
+    <span class="usuario">Cajero · D. González</span>
+  </header>
+  <nav aria-label="Principal">
+      <ul>
+        <li><a href="index.html">Vender</a></li>
+        <li><a href="inventario.html" aria-current="page">Inventario</a></li>
+        <li><a href="ventas.html">Ventas</a></li>
+        <li><a href="usuarios.html">Usuarios</a></li>
+      </ul>
+  </nav>
+  <main>
+    <h1>Inventario</h1>
+
+    <table>
+      <caption>Existencias por producto</caption>
+      <thead>
+        <tr><th scope="col">Producto</th><th scope="col">Existencias</th>
+        <th scope="col">Stock mínimo</th><th scope="col">Estado</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Arroz Diana 500 g</td><td>48</td><td>10</td><td>Normal</td></tr>
+        <tr class="alerta"><td>Leche Alquería 1 L</td><td>3</td><td>12</td>
+        <td>Quedan 3 unidades</td></tr>
+        <tr><td>Huevos AA x 12</td><td>26</td><td>10</td><td>Normal</td></tr>
+        <tr class="alerta"><td>Aceite Girasol 1 L</td><td>5</td><td>8</td>
+        <td>Quedan 5 unidades</td></tr>
+      </tbody>
+    </table>
+    <p class="nota">Las filas resaltadas están por debajo del stock mínimo. El
+    aviso no depende solo del color: la columna Estado lo dice con palabras.</p>
+
+  </main>
+  <footer>
+    <p>SGME · Sistema de Gestión Minimarket Express · Daniel Felipe González
+    Sabogal · Ficha 3389057</p>
+  </footer>
+  <script src="menu.js"></script>
+</body>
+</html>

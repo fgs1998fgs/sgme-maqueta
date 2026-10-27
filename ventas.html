@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ventas del día · SGME</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <span class="marca">SGME · Minimarket Express</span>
+    <button class="menu-boton" aria-expanded="false" aria-controls="menu-principal">☰ Menú</button>
+    <span class="usuario">Cajero · D. González</span>
+  </header>
+  <nav aria-label="Principal">
+      <ul>
+        <li><a href="index.html">Vender</a></li>
+        <li><a href="inventario.html">Inventario</a></li>
+        <li><a href="ventas.html" aria-current="page">Ventas</a></li>
+        <li><a href="usuarios.html">Usuarios</a></li>
+      </ul>
+  </nav>
+  <main>
+    <h1>Ventas del día</h1>
+
+    <table>
+      <caption>Ventas registradas hoy</caption>
+      <thead>
+        <tr><th scope="col">N.º</th><th scope="col">Fecha y hora</th>
+        <th scope="col">Total</th><th scope="col">Acción</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1042</td><td>25/10/2026 10:14</td><td>$ 23.800</td>
+        <td><a href="anular.html">Anular</a></td></tr>
+        <tr><td>1041</td><td>25/10/2026 09:52</td><td>$ 8.300</td>
+        <td><a href="anular.html">Anular</a></td></tr>
+      </tbody>
+    </table>
+
+  </main>
+  <footer>
+    <p>SGME · Sistema de Gestión Minimarket Express · Daniel Felipe González
+    Sabogal · Ficha 3389057</p>
+  </footer>
+  <script src="menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registrar venta · SGME</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <span class="marca">SGME · Minimarket Express</span>
+    <button class="menu-boton" aria-expanded="false" aria-controls="menu-principal">☰ Menú</button>
+    <span class="usuario">Cajero · D. González</span>
+  </header>
+  <nav aria-label="Principal">
+      <ul>
+        <li><a href="index.html" aria-current="page">Vender</a></li>
+        <li><a href="inventario.html">Inventario</a></li>
+        <li><a href="ventas.html">Ventas</a></li>
+        <li><a href="usuarios.html">Usuarios</a></li>
+      </ul>
+  </nav>
+  <main>
+    <h1>Registrar venta</h1>
+
+    <form>
+      <div class="campo">
+        <label for="buscar">Buscar producto</label>
+        <input id="buscar" name="buscar" type="search" value="arroz">
+        <p class="nota">Escriba el nombre; no hace falta el código.</p>
+      </div>
+    </form>
+    <table>
+      <caption>Renglones de la venta</caption>
+      <thead>
+        <tr><th scope="col">Producto</th><th scope="col">Cantidad</th>
+        <th scope="col">Precio unit.</th><th scope="col">Subtotal</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Arroz Diana 500 g</td><td>2</td><td>$ 3.200</td><td>$ 6.400</td></tr>
+        <tr><td>Leche Alquería 1 L</td><td>1</td><td>$ 4.500</td><td>$ 4.500</td></tr>
+        <tr><td>Huevos AA x 12</td><td>1</td><td>$ 12.900</td><td>$ 12.900</td></tr>
+      </tbody>
+    </table>
+    <p class="total">Total <span>$ 23.800</span></p>
+    <div class="acciones">
+      <a class="boton" href="factura.html">Cobrar y facturar</a>
+      <a class="boton secundario" href="index.html">Cancelar</a>
+    </div>
+
+  </main>
+  <footer>
+    <p>SGME · Sistema de Gestión Minimarket Express · Daniel Felipe González
+    Sabogal · Ficha 3389057</p>
+  </footer>
+  <script src="menu.js"></script>
+</body>
+</html>

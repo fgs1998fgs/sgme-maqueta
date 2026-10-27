@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registrar usuario · SGME</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <span class="marca">SGME · Minimarket Express</span>
+    <button class="menu-boton" aria-expanded="false" aria-controls="menu-principal">☰ Menú</button>
+    <span class="usuario">Cajero · D. González</span>
+  </header>
+  <nav aria-label="Principal">
+      <ul>
+        <li><a href="index.html">Vender</a></li>
+        <li><a href="inventario.html">Inventario</a></li>
+        <li><a href="ventas.html">Ventas</a></li>
+        <li><a href="usuarios.html" aria-current="page">Usuarios</a></li>
+      </ul>
+  </nav>
+  <main>
+    <h1>Registrar usuario</h1>
+
+    <p class="ayuda">Los cuatro campos son obligatorios.</p>
+    <form>
+      <div class="dos-columnas">
+        <div class="campo">
+          <label for="nombres">Nombres</label>
+          <input id="nombres" name="nombres" type="text" value="Daniel Felipe">
+        </div>
+        <div class="campo">
+          <label for="apellidos">Apellidos</label>
+          <input id="apellidos" name="apellidos" type="text"
+                 value="González Sabogal">
+        </div>
+        <div class="campo">
+          <label for="cedula">Cédula</label>
+          <input id="cedula" name="cedula" type="text" inputmode="numeric"
+                 value="1.014.256.789">
+        </div>
+        <div class="campo">
+          <label for="nacimiento">Fecha de nacimiento</label>
+          <input id="nacimiento" name="nacimiento" type="date" value="2003-03-14">
+          <p class="nota">Debe ser mayor de edad.</p>
+        </div>
+      </div>
+      <div class="acciones">
+        <a class="boton" href="usuarios.html">Guardar</a>
+        <a class="boton secundario" href="index.html">Cancelar</a>
+      </div>
+    </form>
+
+  </main>
+  <footer>
+    <p>SGME · Sistema de Gestión Minimarket Express · Daniel Felipe González
+    Sabogal · Ficha 3389057</p>
+  </footer>
+  <script src="menu.js"></script>
+</body>
+</html>
